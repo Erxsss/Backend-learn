@@ -44,6 +44,26 @@ const server = http.createServer((req, res) => {
       }
       res.end("duus");
     });
+  } else if (method === "DELETE") {
+    const urll = req.url;
+    const che = urll.split("=");
+    const nae = che[1];
+    console.log(nae);
+    let body = "";
+    req.on("data", (chunk) => {
+      body = body + chunk;
+    });
+    req.on("end", () => {
+      const chek = fs.readFileSync("./ok.json", "utf8");
+      const usa = JSON.parse(chek);
+      for (let i = 0; i < usa.length; i++) {
+        if (usa[i].name === nae) {
+          usa.splice(i, 1);
+          fs.writeFileSync("./ok.json", JSON.stringify(usa), "utf8");
+        }
+      }
+      res.end("duuss");
+    });
   }
 });
 

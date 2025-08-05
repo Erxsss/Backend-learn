@@ -1,10 +1,10 @@
-import Test from "../_components/com.jsx";
+import Mycom from "../_components/com.jsx";
 
-const b = () => {
+export default function Home() {
   return (
     <div>
-      <div>HI</div>
-      <Test name="assd" />
+      <div>Data:</div>
+      <Mycom />
     </div>
   );
-};
+}

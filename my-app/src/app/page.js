@@ -1,19 +1,10 @@
-"use client";
-import React, { useState } from "react";
-export default function Home() {
-  const [count, setcount] = useState(0);
-  const add = () => {
-    setcount(count+1);
-  };
-  const minus = () => {
-    setcount(count - 1);
-  };
+import Mycom from "./_components/com.jsx";
 
+export default function Home() {
   return (
     <div>
-      <button onClick={() => add()}>Add</button>
-      <p>{count}</p>
-      <button onClick={() => minus()}>Minus</button>
+      <div>Data:</div>
+      <Mycom />
     </div>
   );
 }

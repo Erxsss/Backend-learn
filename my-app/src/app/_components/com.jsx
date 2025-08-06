@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 
-const Mycom = () => {
+export const Mycom = () => {
   const [countries, setcountries] = useState([]);
   const [inputValue, setInputValue] = useState("");
   let many = 0;
@@ -70,5 +70,3 @@ const Mycom = () => {
     </div>
   );
 };
-
-export default Mycom;

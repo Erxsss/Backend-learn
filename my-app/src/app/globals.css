@@ -1,10 +1,11 @@
 @import "tailwindcss";
 
 .c {
-  background: #eeaeca;
-  background: radial-gradient(
-    circle,
-    rgba(238, 174, 202, 1) 0%,
-    rgba(148, 187, 233, 1) 100%
+  background: #c96bff;
+  background: linear-gradient(
+    90deg,
+    rgba(201, 107, 255, 1) 0%,
+    rgba(250, 82, 82, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
   );
 }

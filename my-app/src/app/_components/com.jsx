@@ -54,7 +54,7 @@ export const Mycom = () => {
                 return (
                   <div
                     key={index}
-                    className="flex flex-col gap-2 border-[3px] p-7 rounded-xl border-gray-500 bg-white hover:bg-orange-400 hover:text-amber-50 transition-colors duration-100 ease-in-out"
+                    className="flex flex-col gap-2 border-[3px] p-7 rounded-xl border-gray-500 bg-white hover:bg-gray-500 hover:text-amber-50 transition-colors duration-200 ease-in-out"
                     onClick={() => {
                       router.push(`/${country.name.common}`);
                     }}

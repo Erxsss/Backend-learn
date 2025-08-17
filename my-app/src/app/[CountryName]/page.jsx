@@ -20,7 +20,7 @@ const Page = () => {
   console.log(country[0]?.currencies?.name);
 
   return (
-    <div className="c">
+    <div className="c h-[100vh]">
       <div className="flex flex-col gap-[100px] text-[50px] ">
         <div className="color-[white] ml-[170px]">FLAGS OF THE WORLD</div>
         <div>
